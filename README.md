@@ -61,7 +61,8 @@ How to flash Klipper and install Mainsail (CAN-compatible?) [^2] [^3]
 
 ![Wiring](https://github.com/maz0r/klipper_canbus/raw/main/images/canbus_wiring.jpg)
 
-MCU to use UART/USB. Minimum bitrate is appearantly 500k, but unclear (seen 250k in multiple videos, and recommendations of 500k and 1000k).
+MCU to use UART/USB. Minimum bitrate is apparently 500k, but unclear (seen recommendations for 250k, 500k and 1000k).
+I will configure my CAN-setup to use 1000000.
 
 - https://www.klipper3d.org/CANBUS.html
 - https://github.com/Esoterical/voron_canbus
