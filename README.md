@@ -12,7 +12,10 @@ End-goal being a 3D printer that can be controlled via a web interface (Mainsail
 
 - [V2.4R2 Assembly Manual](https://github.com/VoronDesign/Voron-2/raw/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf)
 - [Linear Rail Greasing Guide](https://docs.ldomotors.com/en/guides/rail_grease_guide)
-    - [Mobil Mobilux EP2](https://www.mobil.com/en/lubricants/for-businesses/industrial/lubricants/products/products/mobilux-ep-2)
+
+Ended up using [Mobil Mobilux EP2](https://www.mobil.com/en/lubricants/for-businesses/industrial/lubricants/products/products/mobilux-ep-2) (after first applying WD White Grease + PTFE, and another round of cleaning...). The rails now feel much smoother than with the WD product. 
+
+1 ball bearing was removed from 1 side of the block on my MGN12 to, seemingly, even the numbers. Again, felt way smoother after. 
 
 ### Voron TAP
 
@@ -49,6 +52,7 @@ How to flash Klipper and install Mainsail (CAN-compatible?) [^2] [^3]
 #### Sensorless
 
 - https://github.com/EricZimmerman/VoronTools/blob/main/Sensorless.md
+- https://gist.github.com/clee/9108f7717defce8b1222698f816def0a
 
 ## BTT Pi V1.2
 
@@ -72,13 +76,13 @@ I will configure my CAN-setup to use 1000000.
 
 - https://github.com/EricZimmerman/VoronTools/blob/main/EBB_CAN.md
 
-Note: Jump 120Ohm resistors on both sides of CAN
+Note: Jump 120Ohm resistors on both EBB36 and Canable Pro
 
-![Jumper](https://user-images.githubusercontent.com/124253477/226155159-06afd94e-01fb-4256-89ec-10e59d236eac.png)
+![EBBJumper](https://user-images.githubusercontent.com/124253477/226155159-06afd94e-01fb-4256-89ec-10e59d236eac.png)![CanableJumper](/Files/Canable_jumper.png)
 
 #### Firmware
 
-- https://github.com/maz0r/klipper_canbus/blob/main/controller/candlelight_fw.md
+- https://github.com/Esoterical/voron_canbus/tree/main/toolhead_flashing/common_hardware/BigTreeTech%20EBB36%20V1.2
 - https://bigtreetech.github.io/docs/EBB%20Series.html
 
 #### CANboot
@@ -108,6 +112,12 @@ You want the Processor, Clock Reference, and Application Start offset to be set 
 
 - https://github.com/makerbase-mks/CANable-MKS/tree/main/Hardware/MKS%20CANable%20Pro-V1.0
 - https://github.com/maz0r/klipper_canbus/blob/main/controller/canable.md
+
+#### Firmware
+
+- https://github.com/maz0r/klipper_canbus/blob/main/controller/candlelight_fw.md
+- [candleLight](https://github.com/maz0r/klipper_canbus/blob/main/controller/candlelight_fw.md) (a8a0757)
+    - https://www.youtube.com/watch?v=6MChPbeG6D0
 
 
 ## Future purchases to consider:
